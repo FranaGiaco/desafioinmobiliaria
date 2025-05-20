@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inmobiliaria</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="propiedades_venta.html">Propiedades en Venta</a></li>
+        <li><a href="propiedades_alquiler.html">Propiedades en Alquiler</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Propiedades Destacadas</h1>
+
+    <!-- Propiedades en Venta -->
+    <section id="propiedades-venta">
+      <h2>Propiedades en Venta</h2>
+      <div class="grid" id="venta-container"></div>
+      <!-- Aquí NO debes poner imágenes fijas, porque el JS las va a renderizar -->
+      <button onclick="verTodas('venta')">Ver todas</button>
+    </section>
+
+    <!-- Propiedades en Alquiler -->
+    <section id="propiedades-alquiler">
+      <h2>Propiedades en Alquiler</h2>
+      <div class="grid" id="alquiler-container"></div>
+      <!-- Tampoco imágenes fijas acá -->
+      <button onclick="verTodas('alquiler')">Ver todas</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Inmobiliaria - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
